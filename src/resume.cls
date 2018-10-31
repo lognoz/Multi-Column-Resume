@@ -21,7 +21,7 @@
 \RequirePackage{tabularx}
 
 \setmainfont [
-	Path           = ../assets/fonts/,
+	Path           = ../fonts/,
 	UprightFont    = *-Regular.otf,
 	ItalicFont     = *-It.otf,
 	BoldFont       = *-Semibold.otf,
@@ -44,17 +44,17 @@
 \newcommand{\job}[1]{\small #1 \par}
 \newcommand{\address}[1]{
 	\multicolumn{1}{r}{#1}
-	\parbox[s]{0em}{\includegraphics[scale=0.19]{../assets/images/map}} \\
+	\parbox[s]{0em}{\includegraphics[scale=0.19]{../images/map}} \\
 }
 
 \newcommand{\phone}[1]{
 	\multicolumn{1}{r}{#1}
-	\parbox[s]{0em}{\includegraphics[scale=0.024]{../assets/images/phone}} \\
+	\parbox[s]{0em}{\includegraphics[scale=0.024]{../images/phone}} \\
 }
 
 \newcommand{\email}[1]{
 	\multicolumn{1}{r}{#1}
-	\parbox[s]{0em}{\includegraphics[scale=0.36]{../assets/images/mail}} \\
+	\parbox[s]{0em}{\includegraphics[scale=0.36]{../images/mail}} \\
 }
 
 \newcommand{\link}[2]{{
