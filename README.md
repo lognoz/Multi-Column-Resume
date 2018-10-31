@@ -1,6 +1,8 @@
 # Multi-Column Resume
 Professional and elegant LaTex curriculum vitae template.
 
+![Curriculum vitae example](example.png)
+
 ## Install Dependencies
 ``` sh
 sudo pacman -S texlive-bin texlive-core texlive-formatsextra texlive-latexextra
