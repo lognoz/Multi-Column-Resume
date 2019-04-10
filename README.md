@@ -2,7 +2,6 @@
 Professional and elegant LaTex curriculum vitae template.
 
 ![Curriculum vitae example](./output/resume.svg)
-<img src="./output/resume.svg">
 
 ## Install Dependencies
 ``` sh
