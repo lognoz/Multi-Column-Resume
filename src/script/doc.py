@@ -23,10 +23,10 @@ def convert_pdf_to_png():
     """
     This function convert pdf to a png image.
     """
-    pages = convert_from_path("output/resume.pdf", 90)
+    pages = convert_from_path("resume.pdf", 90)
 
     for page in pages:
-        page.save("output/resume.png", "PNG")
+        page.save("asset/resume.png", "PNG")
 
 def create_mockup(image, background, timestamp):
     """
@@ -41,15 +41,15 @@ def create_mockup(image, background, timestamp):
 
     target.paste(background)
     target.paste(image, (margin, margin))
-    target.save("output/resume." + str(timestamp) + ".png", quality=100)
+    target.save("asset/resume." + str(timestamp) + ".png", quality=100)
 
 def change_documentation(timestamp):
     """
     This function is used to change mockup in documentation.
     """
     for line in edit_file("README.md"):
-        if line.startswith("![Curriculum vitae example]"):
-            print("![Curriculum vitae example](./output/resume." + str(timestamp) + ".png)")
+        if line.startswith("[![Curriculum vitae example]"):
+            print("[![Curriculum vitae example](./asset/resume." + str(timestamp) + ".png)](resume.pdf)")
         else:
             print(line)
 
@@ -58,7 +58,7 @@ def main():
     This function is the main executor.
     """
     convert_pdf_to_png()
-    image = Image.open("output/resume.png")
+    image = Image.open("asset/resume.png")
     background = Image.open("asset/background.jpg")
     timestamp = time()
     create_mockup(image, background, timestamp)
