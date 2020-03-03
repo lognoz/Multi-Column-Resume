@@ -59,6 +59,5 @@
 
 \newcommand{\link}[2]{{
 	\scriptsize
-	\vspace{0.5mm}
-	\textit{\href{#1}{#2}}
+	\textbf{\textit{\href{#1}{#2}}}
 }}
