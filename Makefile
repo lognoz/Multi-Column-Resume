@@ -1,11 +1,15 @@
 # See LICENSE file for copyright and license details.
 
+all: pdf clean image
+
 pdf:
-	@echo Compile resume.tex
-	cd src/ && lualatex resume.tex
+	@cd src/ && lualatex resume.tex
+	@mv src/resume.pdf output/
 
 clean:
-	@echo Remove compilation files
-	rm -f src/*.{aux,log,out}
+	@rm -f src/*.{aux,log,out}
 
-.PHONY: clean pdf
+image:
+	@python src/script/doc.py
+
+.PHONY: clean pdf image all
