@@ -1,7 +1,7 @@
 # Multi-Column Resume
 Professional and elegant LaTex curriculum vitae template.
 
-![Curriculum vitae example](./output/resume.png)
+![Curriculum vitae example](./output/resume.1583196931.507758.png)
 
 ## Install Dependencies
 ``` sh
